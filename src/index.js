@@ -4,13 +4,27 @@ import style from './global.css';
 
 const App = () => {
   return (
-    <div className='flex flex-col justify-between h-screen'>
+    <div className='flex flex-col justify-between h-screen pb-12 text-white bg-slate-700'>
       {/* Header */}
-      <header className='bg-slate-100'>nav</header>
+      <header className='py-6'>
+        <div className='container'>
+          <div className='text-lg'>Vincent's Portfolio</div>
+          <div>
+            <a href='#' className='text-selected-text'>
+              Home
+            </a>
+            <a href='#work'>My work</a>
+            <a href='#clients'>Clients</a>
+            <a href='#hire'>
+              <button>Hire Me</button>
+            </a>
+          </div>
+        </div>
+      </header>
       {/* Body */}
       <section className='flex-grow mb-auto overflow-y-auto'>body</section>
       {/* Footer */}
-      <footer className='bg-slate-100'>footer</footer>
+      <footer className=''>footer</footer>
     </div>
   );
 };
